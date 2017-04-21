@@ -146,3 +146,9 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+    
+ PRODUCT_BOOT_JARS += \
+    telephony-ext
