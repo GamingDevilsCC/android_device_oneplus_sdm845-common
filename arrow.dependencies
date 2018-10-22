@@ -10,5 +10,10 @@
   {
     "repository": "android_vendor_oneplus_sdm845-common",
     "target_path": "vendor/oneplus/sdm845-common"
+  },
+  {
+    "repository" : "packages_resources_OppoGestures",
+    "target_path": "packages/resources/OppoGestures"
   }
+
 ]
