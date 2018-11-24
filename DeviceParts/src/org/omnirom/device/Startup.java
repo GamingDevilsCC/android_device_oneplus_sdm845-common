@@ -106,8 +106,5 @@ public class Startup extends BroadcastReceiver {
         restore(AdaptiveModeSwitch.getFile(), enabled);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_ONEPLUS_SWITCH, false);
         restore(OnePlusModeSwitch.getFile(), enabled);
-
-        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_OTG_SWITCH, false);
-        restore(UsbOtgSwitch.getFile(), enabled);
     }
 }

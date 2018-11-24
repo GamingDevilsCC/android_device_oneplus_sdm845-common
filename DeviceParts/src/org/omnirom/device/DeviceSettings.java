@@ -54,17 +54,12 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String KEY_ADAPTIVE_SWITCH = "adaptive";
     public static final String KEY_ONEPLUS_SWITCH = "oneplus";
 
-    public static final String KEY_OTG_SWITCH = "otg_switch";
-
     public static final String SLIDER_DEFAULT_VALUE = "2,1,0";
 
     private ListPreference mSliderModeTop;
     private ListPreference mSliderModeCenter;
     private ListPreference mSliderModeBottom;
     private static TwoStatePreference mHBMModeSwitch;
-    //private PreferenceCategory buttonCategory;
-    private static TwoStatePreference mOtgSwitch;
-
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -95,11 +90,6 @@ public class DeviceSettings extends PreferenceFragment implements
         mHBMModeSwitch.setEnabled(HBMModeSwitch.isSupported());
         mHBMModeSwitch.setChecked(HBMModeSwitch.isCurrentlyEnabled(this.getContext()));
         mHBMModeSwitch.setOnPreferenceChangeListener(new HBMModeSwitch());
-
-        mOtgSwitch = (TwoStatePreference) findPreference(KEY_OTG_SWITCH);
-        mOtgSwitch.setEnabled(UsbOtgSwitch.isSupported());
-        mOtgSwitch.setChecked(UsbOtgSwitch.isCurrentlyEnabled(this.getContext()));
-        mOtgSwitch.setOnPreferenceChangeListener(new UsbOtgSwitch());
     }
 
     @Override

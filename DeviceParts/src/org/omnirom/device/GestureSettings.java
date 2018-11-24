@@ -54,7 +54,6 @@ public class GestureSettings extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     public static final String KEY_PROXI_SWITCH = "proxi";
-    public static final String KEY_OFF_SCREEN_GESTURE_FEEDBACK_SWITCH = "off_screen_gesture_feedback";
     public static final String KEY_DOUBLE_SWIPE_APP = "double_swipe_gesture_app";
     public static final String KEY_CIRCLE_APP = "circle_gesture_app";
     public static final String KEY_DOWN_ARROW_APP = "down_arrow_gesture_app";
@@ -84,7 +83,6 @@ public class GestureSettings extends PreferenceFragment implements
 
     private TwoStatePreference mProxiSwitch;
     private TwoStatePreference mFpSwipeDownSwitch;
-    private TwoStatePreference mOffscreenGestureFeedbackSwitch;
     private AppSelectListPreference mDoubleSwipeApp;
     private AppSelectListPreference mCircleApp;
     private AppSelectListPreference mDownArrowApp;
