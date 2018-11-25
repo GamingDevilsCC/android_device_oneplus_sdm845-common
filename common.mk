@@ -147,7 +147,9 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 # Telephony
 PRODUCT_PACKAGES += \
-    telephony-ext
+    telephony-ext \
+    ims-ext-common \
+    qti-telephony-common
     
  PRODUCT_BOOT_JARS += \
     telephony-ext \
