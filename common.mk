@@ -112,10 +112,6 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
-# Pocket mode
-PRODUCT_PACKAGES += \
-    OnePlusPocketMode
-
 # Power
 PRODUCT_PACKAGES += \
     power.qcom
@@ -133,11 +129,6 @@ PRODUCT_COPY_FILES += \
 # QTI
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
-
-# tri-state-key
-PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key_daemon
 
 # Update engine
 PRODUCT_PACKAGES += \
