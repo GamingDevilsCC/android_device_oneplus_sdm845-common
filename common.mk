@@ -114,7 +114,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom
+    power.qcom:64
 
 # Prebuilts
 PRODUCT_PACKAGES += \
