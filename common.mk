@@ -175,7 +175,12 @@ PRODUCT_PACKAGES += \
     telephony-ext \
     ims-ext-common \
     ims-ext-common_system \
-    qti-telephony-common
+    qti-telephony-common \
+    qti_telephony_utils.xml \
+    qti-telephony-utils \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml
 
  PRODUCT_BOOT_JARS += \
     telephony-ext \
