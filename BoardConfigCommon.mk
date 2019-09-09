@@ -123,6 +123,12 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware
 
+# Telephony
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
+# SELinux
+PRIVATE_EXCLUDE_BUILD_TEST := true
+
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
