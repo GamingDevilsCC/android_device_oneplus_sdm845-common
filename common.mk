@@ -173,11 +173,12 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     telephony-ext \
     ims-ext-common \
+    ims-ext-common_system \
     qti-telephony-common
-    
+
  PRODUCT_BOOT_JARS += \
     telephony-ext \
-
+    ims-ext-common_system
 
 # WiFi Display
 PRODUCT_PACKAGES += \
