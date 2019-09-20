@@ -61,7 +61,6 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno630
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -99,9 +98,8 @@ TARGET_USES_HWC2 := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# Lineage Hardware
-JAVA_SOURCE_OVERLAYS := \
-    org.lineageos.hardware|$(COMMON_PATH)/lineagehw|**/*.java
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -131,9 +129,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
-# SELinux
-PRIVATE_EXCLUDE_BUILD_TEST := true
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
